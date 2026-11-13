@@ -1,9 +1,12 @@
 import './App.css'
-import Route from '.route.jsx'
+import Router from './router.jsx'
 
 function App() {
-return(
-  <Home />
-)
+  return(
+    <div>
+      <DenunciaEnviada />
+    </div>
+  )
+
 }
 export default App
