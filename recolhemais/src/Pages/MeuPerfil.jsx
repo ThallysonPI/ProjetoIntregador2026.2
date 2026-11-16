@@ -1,7 +1,7 @@
 import '../App.css';
 
 
-function alteracao_senha(){
+  export default function MeuPerfil(){
     return(
         <div></div>
     )

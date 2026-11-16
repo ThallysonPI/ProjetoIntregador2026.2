@@ -2,11 +2,11 @@ import './App.css'
 import Router from './router.jsx'
 
 function App() {
-  return(
+  return (
     <div>
-      <DenunciaEnviada />
+      <Router />
     </div>
   )
-
 }
+
 export default App

@@ -1,10 +1,5 @@
 import '../App.css';
 
+export default function Cadastro(){
 
-
-
-function Cadastro(){
-    return(
-        <div></div>
-    )
 }

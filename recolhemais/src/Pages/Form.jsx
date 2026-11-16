@@ -1,7 +1,7 @@
 import Header from '../Header';
 import '../App.css';
 
-function Form(){
+ export default function Form(){
     return(
         <div>
             <Header title ="React Form" />

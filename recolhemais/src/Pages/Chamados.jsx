@@ -1,7 +1,5 @@
 import '../App.css';
 
-function  Chamados(){
-    return(
-        <div></div>
-    )
+export default function Chamados(){
+    
 }

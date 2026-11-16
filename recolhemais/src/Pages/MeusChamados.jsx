@@ -1,7 +1,8 @@
 import '../App.css';
 
 
-function Meu_perfil(){
+
+  export default function MeusChamados(){
     return(
         <div></div>
     )
