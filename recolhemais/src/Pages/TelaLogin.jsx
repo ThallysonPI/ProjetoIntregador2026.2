@@ -1,6 +1,6 @@
 import '../App.css';
 import {Link} from 'react-router-dom';
-import '../style/login_style.css';
+import '../styles/login_style.css';
 
   export default function TelaLogin(){
     return(

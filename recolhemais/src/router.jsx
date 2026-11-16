@@ -10,7 +10,7 @@ import DenunciaEnviada from'./Pages/DenunciaEnviada.jsx';
 import Mapa from './Pages/Mapa.jsx';
 import MeuPerfil from './Pages/MeuPerfil.jsx';
 import MeusChamados from './Pages/MeusChamados.jsx';
-import Form from './Pages/Form.jsx';
+
 
 export default function Router() {
   return (
@@ -19,7 +19,6 @@ export default function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<TelaLogin />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/denunciar" element={<Form />} />
         <Route path="/denuncia-enviada" element={<DenunciaEnviada />} />
         <Route path="/chamados" element={<Chamados />} />
         <Route path="/meus-chamados" element={<MeusChamados />} />
