@@ -6,7 +6,7 @@
 }
 
 /* Fundo azul */
-body {
+.login-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,18 +64,43 @@ h2 {
 }
 
 /* Esqueceu a senha? */
-.options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-    font-size: 14px;
-    color: #000000;
+.login-page .login-container .options {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 24px !important;
+    font-size: 14px !important;
+    color: #000000 !important;
 } /* Corrigido o ponto e vírgula duplo aqui */
 
-.options a {
-    color: #15803d;
-    text-decoration: none;
+.login-page .login-container .options label {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+}
+
+.login-page .login-container .options input[type="checkbox"] {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex: 0 0 auto;
+}
+
+.login-page .login-container .options a {
+    display: inline !important;
+    color: #15803d !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
 }
 
 .options a:hover {
@@ -104,14 +129,16 @@ h2 {
 }
 
 /* Cadastre-se */
-.signup-text {
+.login-page .login-container .signup-text {
     text-align: center;
     margin-top: 24px;
     font-size: 14px;
     color: #000000;
+    display: block;
 }
 
-.signup-text a {
+.login-page .login-container .signup-text a {
+    display: inline !important;
     color: #15803d;
     text-decoration: none;
     font-weight: 600;
@@ -126,7 +153,7 @@ h2 {
    RESPONSIVIDADE PARA CELULARES (Telas até 400px)
    =================================================== */
 @media screen and (max-width: 400px) {
-    body {
+    .login-page {
         padding: 10px; /* Reduz margem externa no mobile */
     }
 

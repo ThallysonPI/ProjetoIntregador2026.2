@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+.home-page {
     background-color: rgb(224, 223, 219);
 }
 
@@ -130,6 +130,7 @@ section.hero-site {
     font-size: 4em;
     line-height: 70px;
     font-weight: 200;
+    color:white;
 }
 
 .hero-site .txt-hero h1 span {
@@ -151,6 +152,11 @@ section.hero-site {
 .hero-site .txt-hero button {
     width: 200px;
     height: 40px;
+    padding: 0;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     font-size: 18px;
     border: 1px solid white;
@@ -196,7 +202,7 @@ section.vantagens {
     font-weight: 300;
 }
 
-body section.vantagens div.interface article {
+.home-page section.vantagens div.interface article {
     background-color: rgb(224, 223, 219);
 }
 

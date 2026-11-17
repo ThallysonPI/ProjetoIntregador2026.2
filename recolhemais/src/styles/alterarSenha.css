@@ -4,13 +4,14 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body {
+.alterar-senha-page {
 font-family: Arial, sans-serif;
 background-color:#0f172a;
 display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
+width: 100%;
 }
 
 .login-container {

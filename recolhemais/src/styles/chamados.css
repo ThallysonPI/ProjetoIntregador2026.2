@@ -19,7 +19,7 @@ html {
   font-size: calc(16px * var(--ui-scale));
 }
 
-body {
+.chamados-page {
   min-height: 100vh;
   background: #e8e8e7;
   color: var(--text);

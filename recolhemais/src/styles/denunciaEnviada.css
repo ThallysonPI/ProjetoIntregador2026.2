@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+.denuncia-page {
     background-color: #f1f7f0;
     min-height: 100vh;
     display: flex;
@@ -97,7 +97,7 @@ h1 {
    RESPONSIVIDADE PARA CELULARES (Telas até 400px)
    =================================================== */
 @media screen and (max-width: 400px) {
-    body {
+    .denuncia-page {
         padding: 10px;
     }
 
