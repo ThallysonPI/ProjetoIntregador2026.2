@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-import Home from './Pages/Home.jsx'
+import Form from './Pages/Form.jsx';
+import Home from './Pages/Home.jsx';
 import TelaLogin from './Pages/TelaLogin.jsx';
 import Cadastro from'./Pages/Cadastro.jsx';
 import Chamados from'./Pages/Chamados.jsx';
@@ -16,6 +16,7 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/Form" element={<Form/>} />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<TelaLogin />} />
         <Route path="/cadastro" element={<Cadastro />} />
