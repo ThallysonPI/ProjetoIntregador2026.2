@@ -9,7 +9,7 @@ export default function Cadastro() {
   function handleSubmit(event) {
     event.preventDefault();
   }
-
+d
   return (
     <div className="cadastro-page">
       <main className="container-principal">
