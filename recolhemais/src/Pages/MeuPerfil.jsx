@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../App.css';
+import '../styles/chamados.css';
 import '../styles/perfil.css';
 
 export default function MeuPerfil() {
@@ -8,45 +9,50 @@ export default function MeuPerfil() {
   }
 
   return (
-    <div className="perfil-page">
+    <div className="desktop-shell perfil-page">
       <aside className="sidebar">
-        <div className="logo-area">
-          <div className="logo-icon">
-            <img src="/imagens/imag.png" alt="Logo RecolheMais" />
-          </div>
-          <div className="logo-text">
+        <div className="brand">
+          <img className="brand-logo" src="/imagens/imag.png" alt="" aria-hidden="true" />
+          <div>
             <strong>RecolheMais</strong>
             <span>Gestão de chamados</span>
           </div>
         </div>
 
-        <nav className="menu" aria-label="Navegação principal">
+        <nav className="sidebar-menu" aria-label="Navegação principal">
           <Link to="/chamados" className="menu-item">
-            <span className="icon">＋</span><span>Novo chamado</span>
+            <span>＋</span> Novo chamado
           </Link>
           <Link to="/meus-chamados" className="menu-item">
-            <span className="icon">◷</span><span>Meus chamados</span>
+            <span>◷</span> Meus chamados
           </Link>
           <Link to="/mapa" className="menu-item">
-            <span className="icon">⌖</span><span>Mapa</span>
+            <span>⌖</span> Mapa
+          </Link>
+          <Link to="/calendario" className="menu-item">
+            <span>▦</span> Calendário
           </Link>
           <Link to="/perfil" className="menu-item active" aria-current="page">
-            <span className="icon">♙</span><span>Meu perfil</span>
+            <span>♙</span> Meu perfil
           </Link>
         </nav>
       </aside>
 
       <main className="main">
-        <header className="header">
+        <header className="topbar">
           <div>
-            <span className="header-small">Meu perfil</span>
-            <h2>Olá, João 👋</h2>
+            <p className="breadcrumb">Meu perfil</p>
+            <h1>Olá, João 👋</h1>
           </div>
         </header>
 
-        <section className="content">
-          <h1>Meu perfil</h1>
-          <p className="subtitle">Gerencie suas informações pessoais e os dados da sua conta.</p>
+        <section className="page">
+          <div className="page-heading">
+            <div>
+              <h2>Meu perfil</h2>
+              <p>Gerencie suas informações pessoais e os dados da sua conta.</p>
+            </div>
+          </div>
 
           <div className="profile-layout">
             <div className="card profile-card">

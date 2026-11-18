@@ -2,15 +2,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/cadastro.css';
-import { useNavigate } from 'react-router-dom';
-
 
 export default function Cadastro() {
   const [tipoCadastro, setTipoCadastro] = useState('morador');
-  const navigate = useNavigate();
+
   function handleSubmit(event) {
     event.preventDefault();
-    navigate('/chamados');
   }
 
   return (
@@ -18,7 +15,10 @@ export default function Cadastro() {
       <main className="container-principal">
         <div className="recolhe-mais">
           <Link to="/login">
-            <img src="/imagens/logo_melhorada.png" alt="Logo RecolheMais" />
+            <img
+              src={`${import.meta.env.BASE_URL}imagens/logo_melhorada.png`}
+              alt="Logo RecolheMais"
+            />
           </Link>
         </div>
 

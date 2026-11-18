@@ -55,8 +55,8 @@ button {
 .brand {
   display: flex;
   align-items: center;
-  gap: 1px;
-  padding: 50 35px;
+  gap: 12px;
+  padding: 8px 10px 20px;
 }
 
 .brand img {
@@ -70,6 +70,16 @@ button {
   font-size: 25px;
   font-weight: bold;
   
+}
+
+.brand img.brand-logo {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: block;
+  border-radius: 0;
+  background: transparent;
+  object-fit: contain;
 }
 
 .brand strong {
@@ -94,11 +104,13 @@ button {
   display: flex;
   align-items: center;
   gap: 13px;
+  min-height: 46px;
   padding: 13px 14px;
   border-radius: 9px;
   color: #e9eee8;
   text-decoration: none;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .menu-item span {
@@ -567,6 +579,10 @@ textarea {
   .sidebar-menu {
     flex-direction: row;
     overflow-x: auto;
+  }
+
+  .brand {
+    padding-bottom: 15px;
   }
 
   .menu-item {

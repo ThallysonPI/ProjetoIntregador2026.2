@@ -14,7 +14,7 @@ min-height: 100vh;
 width: 100%;
 }
 
-.login-container {
+.alterar-senha-page .login-container {
 background-color: white;
 width: 350px;
 padding: 30px;
@@ -22,28 +22,28 @@ border-radius: 12px;
 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-h2 {
+.alterar-senha-page h2 {
 text-align: center;
 margin-bottom: 25px;
 }
 
-.input-group {
+.alterar-senha-page .input-group {
 margin-bottom: 18px;
 }
 
-.input-group label {
+.alterar-senha-page .input-group label {
 display: block;
 margin-bottom: 7px;
 }
 
-.input-group input {
+.alterar-senha-page .input-group input {
 width: 100%;
 padding: 12px;
 border: 1px solid #ccc;
 border-radius: 8px;
 }
 
-button {
+.alterar-senha-page button {
 width: 60%;
 display: block;
 margin: 0 auto;
@@ -55,7 +55,7 @@ border-radius: 8px;
 cursor: pointer;
 }
 
-a {
+.alterar-senha-page a {
 display: block;
 text-align: center;
 margin-top: 18px;

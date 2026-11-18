@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body {
+.denuncia-page {
 font-family: arial, sans-serif;
 background-color: #f1f7f0;
 min-height: 100vh;
@@ -12,9 +12,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 20px;
+width: 100%;
 }
 
-.container {
+.denuncia-page .container {
 background-color: #ffffff;
 width: 100%;
 max-width: 480px;
@@ -24,7 +25,7 @@ text-align: center;
 box-shadow: 0 5px 20px #00000012;
 }
 
-.icone-sucesso {
+.denuncia-page .icone-sucesso {
 width: 85px;
 height: 85px;
 margin: 0 auto 20px;
@@ -37,19 +38,19 @@ align-items: center;
 justify-content: center;
 }
 
-h1 {
+.denuncia-page h1 {
 color: #218739;
 font-size: 27px;
 margin-bottom: 15px;
 }
 
-.mensagem {
+.denuncia-page .mensagem {
 color: #555;
 line-height: 1.6;
 margin-bottom: 25px;
 }
 
-.status {
+.denuncia-page .status {
 background-color: #f1f7f0;
 padding: 18px;
 border-radius: 10px;
@@ -58,7 +59,7 @@ line-height: 1.7;
 margin-bottom: 25px;
 }
 
-.botao {
+.denuncia-page .botao {
 display: block;
 background-color: #218739;
 color: white;
@@ -68,11 +69,11 @@ border-radius: 8px;
 font-weight: bold;
 }
 
-.botao:hover {
+.denuncia-page .botao:hover {
 background-color: #176b2b;
 }
 
-.link-inicio {
+.denuncia-page .link-inicio {
 display: inline-block;
 margin-top: 20px;
 color: #218739;

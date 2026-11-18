@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
+import '../App.css';
 import '../styles/home.css';
+
+const publicImagesPath = `${import.meta.env.BASE_URL}imagens/`;
 
 export default function Home() {
   return (
@@ -7,7 +10,7 @@ export default function Home() {
       <header id="header">
         <div className="interface">
           <section className="logo-UECI">
-            <img src="/imagens/Logo_vetor_Recolhe.png" alt="Logo RecolheMais" />
+            <img src="/imagens/imag.png" alt="RecolheMais" />
           </section>
 
           <section className="menu-desktop">
@@ -62,13 +65,13 @@ export default function Home() {
               </p>
             </div>
             <div className="img-itens">
-              <img src="/imagens/vantagens_edit-1.png" alt="Bairro limpo" />
+              <img src={`${publicImagesPath}vantagens_edit-1.png`} alt="Bairro limpo" />
             </div>
           </article>
 
           <article className="itens-conteiner">
             <div className="img-itens">
-              <img src="/imagens/vantagens_edit-2.png" alt="Morador usando o sistema" />
+              <img src={`${publicImagesPath}vantagens_edit-2.png`} alt="Morador usando o sistema de coleta" />
             </div>
             <div className="txt-itens">
               <h3><span>Poder</span> na sua<br /> mão</h3>
@@ -90,13 +93,13 @@ export default function Home() {
               </p>
             </div>
             <div className="img-itens">
-              <img src="/imagens/vantagens_edit-3.png" alt="Recompensas por cuidar do bairro" />
+              <img src={`${publicImagesPath}vantagens_edit-3.png`} alt="Recompensas por cuidar do bairro" />
             </div>
           </article>
 
           <article className="itens-conteiner invertido">
             <div className="img-itens">
-              <img src="/imagens/vantagens_edit-4.png" alt="Rede inteligente de coleta" />
+              <img src={`${publicImagesPath}vantagens_edit-4.png`} alt="Rede inteligente de coleta" />
             </div>
             <div className="txt-itens">
               <h3><span>Conexão</span> direta e<br /> inteligente</h3>
@@ -118,7 +121,7 @@ export default function Home() {
               </p>
             </div>
             <div className="img-itens">
-              <img src="/imagens/vantagens_edit-5.png" alt="Coletores trabalhando" />
+              <img src={`${publicImagesPath}vantagens_edit-5.png`} alt="Coletores trabalhando" />
             </div>
           </article>
         </div>

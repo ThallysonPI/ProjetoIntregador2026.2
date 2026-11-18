@@ -7,7 +7,7 @@ export default function MeusChamados() {
     <div className="desktop-shell meus-chamados-page">
       <aside className="sidebar">
         <div className="brand">
-          <img src="/imagens/imag.png" alt="Logo RecolheMais" />
+          <img className="brand-logo" src="/imagens/imag.png" alt="" aria-hidden="true" />
           <div>
             <strong>RecolheMais</strong>
             <span>Gestão de chamados</span>
@@ -18,6 +18,7 @@ export default function MeusChamados() {
           <Link to="/chamados" className="menu-item"><span>＋</span> Novo chamado</Link>
           <Link to="/meus-chamados" className="menu-item active" aria-current="page"><span>◷</span> Meus chamados</Link>
           <Link to="/mapa" className="menu-item"><span>⌖</span> Mapa</Link>
+          <Link to="/calendario" className="menu-item"><span>▦</span> Calendário</Link>
           <Link to="/perfil" className="menu-item"><span>♙</span> Meu perfil</Link>
         </nav>
       </aside>

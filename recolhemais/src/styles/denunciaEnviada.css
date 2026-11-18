@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Essencial para o padding não estourar o container */
-    font-family: Arial, sans-serif;
 }
 
 .denuncia-page {
@@ -12,9 +11,10 @@
     justify-content: center;
     align-items: center;
     padding: 15px; /* Margem de segurança para o container não colar nas bordas no mobile */
+    font-family: Arial, sans-serif;
 }
 
-.container {
+.denuncia-page .container {
     background-color: #ffffff;
     width: 100%;
     max-width: 480px;
@@ -25,7 +25,7 @@
     box-sizing: border-box; /* Trava o padding para dentro */
 }
 
-.icone-sucesso {
+.denuncia-page .icone-sucesso {
     width: 85px;
     height: 85px;
     margin: 0 auto 20px auto;
@@ -38,20 +38,20 @@
     justify-content: center;
 }
 
-h1 {
+.denuncia-page h1 {
     color: #218739;
     font-size: 27px;
     margin-bottom: 15px;
 }
 
-.mensagem {
+.denuncia-page .mensagem {
     color: #555555;
     line-height: 1.6;
     margin-bottom: 25px;
     font-size: 15px;
 }
 
-.status {
+.denuncia-page .status {
     background-color: #f1f7f0;
     padding: 18px;
     border-radius: 10px;
@@ -61,7 +61,7 @@ h1 {
     font-size: 14px;
 }
 
-.botao {
+.denuncia-page .botao {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -76,11 +76,11 @@ h1 {
     box-sizing: border-box;
 }
 
-.botao:hover {
+.denuncia-page .botao:hover {
     background-color: #176b2b;
 }
 
-.link-inicio {
+.denuncia-page .link-inicio {
     display: inline-block;
     margin-top: 20px;
     color: #218739;
@@ -89,7 +89,7 @@ h1 {
     font-weight: 600;
 }
 
-.link-inicio:hover {
+.denuncia-page .link-inicio:hover {
     text-decoration: underline;
 }
 
@@ -101,21 +101,21 @@ h1 {
         padding: 10px;
     }
 
-    .container {
+    .denuncia-page .container {
         padding: 25px 15px; /* Reduz espaçamento interno em telas muito estreitas */
     }
 
-    h1 {
+    .denuncia-page h1 {
         font-size: 22px; /* Diminui o título para não quebrar feio */
     }
 
-    .icone-sucesso {
+    .denuncia-page .icone-sucesso {
         width: 70px;
         height: 70px;
         font-size: 35px;
     }
 
-    .mensagem, .status {
+    .denuncia-page .mensagem, .denuncia-page .status {
         font-size: 14px;
     }
 }
