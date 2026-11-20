@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
 import '../styles/cadastro.css';
 
 export default function Cadastro() {
   const [tipoCadastro, setTipoCadastro] = useState('morador');
-
+  const navegate=useNavigate();
   function handleSubmit(event) {
     event.preventDefault();
+    navegate('/Chamados');
+  
   }
-d
+
   return (
     <div className="cadastro-page">
       <main className="container-principal">
