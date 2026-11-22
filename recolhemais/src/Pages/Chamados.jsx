@@ -1,13 +1,42 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
 import '../styles/chamados.css';
 
 export default function Chamados() {
   const navigate = useNavigate();
+  const timerRef = useRef(null);
+
+  const [nomeArquivo, setNomeArquivo] = useState('Adicionar uma foto');
+  const [mostrarToast, setMostrarToast] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Novo chamado | RecolheMais';
+
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, []);
+
+  function handleFotoChange(event) {
+    const files = event.target.files;
+    setNomeArquivo(files && files.length ? files[0].name : 'Adicionar uma foto');
+  }
+
+  function handleReset() {
+    setNomeArquivo('Adicionar uma foto');
+    setMostrarToast(false);
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
-    navigate('/denuncia-enviada');
+    setMostrarToast(true);
+
+    timerRef.current = setTimeout(() => {
+      navigate('/denuncia-enviada');
+    }, 2500);
   }
 
   return (
@@ -55,7 +84,7 @@ export default function Chamados() {
                 </div>
               </div>
 
-              <form onSubmit={handleSubmit}>
+              <form id="ticketForm" onSubmit={handleSubmit} onReset={handleReset}>
                 <div className="form-grid">
                   <div className="field">
                     <label htmlFor="tipo-material">Tipo de material *</label>
@@ -96,12 +125,19 @@ export default function Chamados() {
                     <label className="upload" htmlFor="foto">
                       <span className="upload-icon" aria-hidden="true">＋</span>
                       <span>
-                        <strong>Adicionar uma foto</strong>
+                        <strong id="fileName">{nomeArquivo}</strong>
                         <small>Selecione uma imagem do seu dispositivo</small>
                       </span>
                       <span className="upload-action">Escolher arquivo</span>
                     </label>
-                    <input className="hidden-file" type="file" id="foto" name="foto" accept="image/*" />
+                    <input
+                      className="hidden-file"
+                      type="file"
+                      id="foto"
+                      name="foto"
+                      accept="image/*"
+                      onChange={handleFotoChange}
+                    />
                   </div>
                 </div>
 
@@ -124,6 +160,10 @@ export default function Chamados() {
             </aside>
           </div>
         </section>
+
+        <div id="toast" className={`toast ${mostrarToast ? 'show' : ''}`} role="status" aria-live="polite">
+          Denúncia enviada! Redirecionando...
+        </div>
       </main>
     </div>
   );

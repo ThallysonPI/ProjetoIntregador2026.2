@@ -8,6 +8,7 @@ export default function MeuPerfil() {
     event.preventDefault();
   }
 
+
   return (
     <div className="desktop-shell perfil-page">
       <aside className="sidebar">

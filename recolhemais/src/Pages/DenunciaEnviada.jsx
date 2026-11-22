@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/denunciaEnviada.css';
+import { useEffect } from 'react';
 
 export default function DenunciaEnviada() {
+
+  useEffect(()=>{
+document.title='Denuncia Enviada | RecolheMais'
+  },[])
   return (
     <div className="denuncia-page">
       <main className="container">
