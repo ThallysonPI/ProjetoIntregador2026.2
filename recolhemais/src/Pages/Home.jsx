@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import '../App.css';
 import '../styles/home.css';
 
 const publicImagesPath = `${import.meta.env.BASE_URL}imagens/`;

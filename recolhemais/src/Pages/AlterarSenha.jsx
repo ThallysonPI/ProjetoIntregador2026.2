@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import '../App.css';
 import '../styles/alterarSenha.css';
 
 export default function AlterarSenha() {

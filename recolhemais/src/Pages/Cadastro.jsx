@@ -1,13 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../App.css';
 import '../styles/cadastro.css';
 
-export default function Cadastro() {
-useEffect(()=>{
-document.title='Cadastro | RecolheMais'
-  },[])
-  
+export default function Cadastro() {  
   const [tipoCadastro, setTipoCadastro] = useState('morador');
   const navegate=useNavigate();
   function handleSubmit(event) {

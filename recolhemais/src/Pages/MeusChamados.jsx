@@ -1,14 +1,8 @@
 import { Link } from 'react-router-dom';
-import '../App.css';
+
 import '../styles/meusChamados.css';
 
 export default function MeusChamados() {
-
-
-
-
-
-
   return (
     <div className="desktop-shell meus-chamados-page">
       <aside className="sidebar">
